@@ -1,5 +1,4 @@
 package com.qa.testes_unitarios_JUnit.controller;
-
 import com.qa.testes_unitarios_JUnit.entities.User;
 import com.qa.testes_unitarios_JUnit.dto.UserLoginDTO;
 import com.qa.testes_unitarios_JUnit.service.UserService;
@@ -7,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import jakarta.validation.Valid;
 
 @RestController
@@ -17,7 +15,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // Endpoint para registro de usuário
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@Valid @RequestBody User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -36,7 +33,6 @@ public class UserController {
         }
     }
 
-    // Endpoint para login de usuário
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestBody @Valid UserLoginDTO userLoginDTO) {
         try {

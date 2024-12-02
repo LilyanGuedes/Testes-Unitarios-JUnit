@@ -20,17 +20,16 @@ public class User {
     private String name;
 
     @Column(nullable = false, unique = true)
-    @NotBlank(message = "O email não pode estar vazio")  // Mensagem personalizada
+    @NotBlank(message = "O email não pode estar vazio")
     @Email(message = "Por favor, forneça um email válido")
     private String email;
 
     @Column(nullable = false)
-    @NotBlank(message = "A senha não pode estar vazia")  // Mensagem personalizada
+    @NotBlank(message = "A senha não pode estar vazia")
     @Size(min = 8, message = "A senha deve ter pelo menos 8 caracteres")
     @Pattern(regexp = ".*\\d.*", message = "A senha deve conter pelo menos um número")
     private String password;
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }

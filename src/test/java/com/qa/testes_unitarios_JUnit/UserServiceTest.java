@@ -39,7 +39,7 @@ public class UserServiceTest {
     }
 
 
-    // Teste de cadastro de usuário válido
+    // teste de cadastro de usuário válido
     @Test
     public void testRegisterUser_ValidData() {
 
@@ -53,7 +53,7 @@ public class UserServiceTest {
     }
 
 
-    // Teste de cadastro com email duplicado
+    // teste de cadastro com email duplicado
     @Test
     public void testRegisterUser_EmailAlreadyExists() {
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
@@ -65,7 +65,7 @@ public class UserServiceTest {
         assertEquals("Email já está em uso", thrown.getMessage());
     }
 
-    // Teste de cadastro com senha curta
+    // teste de cadastro com senha curta
     @Test
     public void testRegisterUser_ShortPassword() {
         String shortPassword = "12345";
@@ -76,7 +76,7 @@ public class UserServiceTest {
         assertEquals("A senha deve ter pelo menos 8 caracteres", thrown.getMessage());
     }
 
-    // Teste de login bem-sucedido
+    // teste de login bem-sucedido
     @Test
     public void testLoginUser_Success() {
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
@@ -87,7 +87,7 @@ public class UserServiceTest {
         assertEquals(user.getEmail(), result.getEmail());
     }
 
-    // Teste de login com senha incorreta
+    // teste de login com senha incorreta
     @Test
     public void testLoginUser_InvalidPassword() {
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
@@ -99,7 +99,7 @@ public class UserServiceTest {
         assertEquals("Email ou senha inválidos", thrown.getMessage());
     }
 
-    // Teste de login com email não cadastrado
+    // teste de login com email não cadastrado
     @Test
     public void testLoginUser_EmailNotFound() {
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.empty());
