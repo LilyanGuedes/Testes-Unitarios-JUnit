@@ -26,6 +26,6 @@ Este projeto implementa um sistema simples para cadastro e login de usuários, c
 
 ### **Pré-requisitos**
 - **Java 11 ou superior**
-- **Maven** ou **Gradle**
+- **Maven**
 - IDE como IntelliJ IDEA, Eclipse ou VS Code.
 
