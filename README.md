@@ -1,7 +1,7 @@
 # **Testes Unitários com JUnit para Cadastro e Login de Usuários**
 
 ## **Descrição do Projeto**
-Este projeto implementa um sistema simples para cadastro e login de usuários, com validações rigorosas para senhas, emails e tratamento de exceções. Inclui testes unitários desenvolvidos com JUnit para validar as funcionalidades principais, garantindo a confiabilidade e qualidade do sistema.
+Este projeto implementa um sistema simples para cadastro e login de usuários, com validações para senhas, emails e tratamento de exceções. Inclui testes unitários desenvolvidos com JUnit para validar as funcionalidades principais, garantindo a confiabilidade e qualidade do sistema.
 
 ## **Funcionalidades**
 - **Cadastro de Usuários**:
