@@ -20,7 +20,7 @@ Este projeto implementa um sistema simples para cadastro e login de usuários, c
   - JUnit 5 (para testes unitários)
   - Mockito (para mocks em testes)
 - **Ferramentas de Build**:
-  - Maven ou Gradle (dependendo da configuração escolhida)
+  - Maven
 
 ## **Configuração do Projeto**
 
