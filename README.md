@@ -1,5 +1,7 @@
 # **Testes Unitários com JUnit para Cadastro e Login de Usuários**
 
+alunos: Lílyan Gabryella Guedes 01565435  / Júlio César Amorim 01024947
+
 ## **Descrição do Projeto**
 Este projeto implementa um sistema simples para cadastro e login de usuários, com validações para senhas, emails e tratamento de exceções. Inclui testes unitários desenvolvidos com JUnit para validar as funcionalidades principais, garantindo a confiabilidade e qualidade do sistema.
 
