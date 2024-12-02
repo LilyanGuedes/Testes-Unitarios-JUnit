@@ -29,7 +29,3 @@ Este projeto implementa um sistema simples para cadastro e login de usuários, c
 - **Maven** ou **Gradle**
 - IDE como IntelliJ IDEA, Eclipse ou VS Code.
 
-### **Clonando o Repositório**
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
